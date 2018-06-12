@@ -14,7 +14,7 @@
     "build-demo": "ng build --prod --base-href=/angular-gridster2/",
     "build-npm": "ng build angular-gridster2 --prod",
     "deploy-demo": "ngh --dir=dist/demo --repo=https://GH_TOKEN@github.com/tiberiuzuld/angular-gridster2.git --name='Tiberiu Zuld' --email=tiberiuzuld@gmail.com",
-    "install": "npm run build-npm"
+    "install": "npm install . && npm run build-npm"
   },
   "homepage": "https://tiberiuzuld.github.io/angular-gridster2",
   "bugs": {
