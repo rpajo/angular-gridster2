@@ -132,7 +132,7 @@ export class GridsterPush {
         break;
       }
       const compare = this.pushedItemsTemp.find((el: GridsterItemComponentInterface) => {
-        return el.$item.x === itemCollision.$item.x && el.$item.y === itemCollision.$item.y;
+        return direction !== 'fromNorth' && el.$item.x === itemCollision.$item.x && el.$item.y === itemCollision.$item.y;
       });
       if (compare) {
         makePush = false;
